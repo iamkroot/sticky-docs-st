@@ -1,0 +1,49 @@
+[ 
+    // Move Up/Down in Completion
+    {
+        "command": "sticky_docs_move",
+        "args": {
+            "forward": false
+        },
+        "keys": [
+            "up"
+        ],
+        "context": [
+            {
+                "key": "auto_complete_visible",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "command": "sticky_docs_move",
+        "args": {
+            "forward": true
+        },
+        "keys": [
+            "down"
+        ],
+        "context": [
+            {
+                "key": "auto_complete_visible",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+    {
+        "command": "sticky_docs_toggle",
+        "args": {},
+        "keys": [
+            "f12"
+        ],
+        "context": [
+            {
+                "key": "auto_complete_visible",
+                "operator": "equal",
+                "operand": true
+            }
+        ]
+    },
+]
