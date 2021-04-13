@@ -23,5 +23,5 @@ class StickyDocsToggleCommand(sublime_plugin.TextCommand):
 
 class CompleteCloseListener(sublime_plugin.EventListener):
     def on_post_text_command(self, view, command_name, args):
-        if command_name == "hide_auto_complete":
+        if command_name == "hide_auto_complete" or command_name == "commit_completion":
             StickyDocsToggleCommand.enabled = False
